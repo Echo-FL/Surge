@@ -2,14 +2,17 @@
 $notification.post(title<String>, subtitle<String>, body<String>) //surge通知推送
 */
 //[Script]
-// cron "*/30 7-23,0 * * *" debug=1,script-path= https://github.com/sky003-Max/surge-script/raw/master/Chronograph.js
+// cron "*/30 7-23,0 * * *" 
 //每天7：00-23：00和0点 的 0分和30分通知一次
 //corn相关调试： https://crontab.guru/
 var myDate=new Date();
 var day = myDate.getDay();
-var weeks = new Array("🟠周日", "⚫️周一", "🟡周二", "🟢周三", "🔵周四", "🔴周五", "🟣周六");
+var weeks = new Array("周日", "周一", "周二", "周三", "周四", "周五", "周六");
+var randomcolor=new Array("🔴","🟣","🔵","🟢","🟡","🟠","⚪️","🟤","🔶","🔷","☣️","☢️","❤️","🧡","💛","💚","💙","🤎","🤍","💜","🌕","🌍","🧊","🏆","🥇","🥈","🥉","🏅","💎")
+var randomnum=Math.floor(Math.random()*28)//生成0-27的随机数
+var randomcolorshape=randomcolor[randomnum]
 var week = weeks[day];
-var today = '🦄️今天是' + myDate.getFullYear() + '年' + myDate.getMonth() + '月' + myDate.getDate() + '日' + " " + week + "."//获取当前年月日，和周几；
+var today = '🦄️今天是' + myDate.getFullYear() + '年' + myDate.getMonth() + '月' + myDate.getDate() + '日' + " " + randomcolorshape+ week + "."//获取当前年月日，和周几；
 var hour = myDate.getHours();
 var judge;
 if (0 <= hour && hour < 6)

@@ -44,7 +44,7 @@ http-request https?:\/\/.*\.iqiyi\.com\/.*authcookie= script-path=https://raw.gi
 
 # 什么值得买获取cookie
 
-http-request ^https:\/\/www\.smzdm\.com\/?.? script-path=https://raw.githubusercontent.com/sky003-Max/surge-personal/master/Scriptsmzdm/smzdm.cookie.js
+http-request ^https:\/\/www\.smzdm\.com\/?.? script-path=https://raw.githubusercontent.com/sky003-Max/surge-personal/master/Script/smzdm/smzdm.cookie.js
 
 # 京东获取cookie
 

@@ -2,7 +2,7 @@
 国区wps
 
 [Script]
-http-response ^https?:\/\/account\.wps\.cn\/api\/users requires-body=1,max-size=-1,script-path=
+http-response ^https?:\/\/account\.wps\.cn\/api\/users requires-body=1,max-size=-1,script-path=https://raw.githubusercontent.com/sky003-Max/surge-personal/master/Script/Wps.js
 
 [MITM]
 hostname = account.wps.cn

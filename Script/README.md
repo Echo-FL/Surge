@@ -25,11 +25,11 @@ cron "1,2 8,18  * * *" script-path=n3ro.js
 
 # 京东价格
 
-http-response ^https?://api\.m\.jd\.com/client\.action\?functionId=(wareBusiness|serverConfig) requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/sky003-Max/surge-personal/master/Script/jd_price.js,script-update-interval=0
+http-response ^https?://api\.m\.jd\.com/client\.action\?functionId=(wareBusiness|serverConfig) requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/sky003-Max/surge-personal/master/Script/jdprice/jd_price.js,script-update-interval=0
 
 # 淘宝价格二选一
 
-http-response ^https://trade-acs.m.taobao.com/gw/mtop.taobao.detail.getdetail requires-body=1,max-size=1048576,script-phttps://raw.githubusercontent.com/sky003-Max/surge-personal/master/Script/tbprice/tb_price.js,script-update-interval=0
+http-response ^https://trade-acs.m.taobao.com/gw/mtop.taobao.detail.getdetail requires-body=1,max-size=1048576,script-path=https://raw.githubusercontent.com/sky003-Max/surge-personal/master/Script/tbprice/tb_price.js,script-update-interval=0
 
 
 //http-response ^https://trade-acs.m.taobao.com/gw/mtop.taobao.detail.getdetail requires-body=1,max-size=1048576,script-path=https://raw.githubusercontent.com/sky003-Max/surge-personal/master/Script/tbprice/tb_price_lite.js,script-update-interval=0

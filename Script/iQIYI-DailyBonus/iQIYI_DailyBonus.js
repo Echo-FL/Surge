@@ -30,7 +30,7 @@ $httpClient.get('https://tc.vip.iqiyi.com/taskCenter/task/queryUserTask?autoSign
     var obj = JSON.parse(data);
     if (obj.msg == "成功") {
       if (obj.data.signInfo.code == "A00000") {
-        console.log("success response: \n" + data);
+        //console.log("success response: \n" + data);
         var status = obj.data.signInfo.msg;
         var AwardName = obj.data.signInfo.data.rewards[0].name;
         var quantity = obj.data.signInfo.data.rewards[0].value;

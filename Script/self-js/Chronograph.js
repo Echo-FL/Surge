@@ -12,7 +12,7 @@ var randomcolor=new Array("🔴","🟣","🔵","🟢","🟡","🟠","⚪️","�
 var randomnum=Math.floor(Math.random()*28)//生成0-27的随机数
 var randomcolorshape=randomcolor[randomnum]
 var week = weeks[day];
-var today = '🦄️今天是' + myDate.getFullYear() + '年' + myDate.getMonth() + '月' + myDate.getDate() + '日' + " " + randomcolorshape+ week + "."//获取当前年月日，和周几；
+var today = '🦄️今天是' + myDate.getFullYear() + '年' + (myDate.getMonth()+1) + '月' + myDate.getDate() + '日' + " " + randomcolorshape+ week + "."//获取当前年月日，和周几；
 var hour = myDate.getHours();
 var judge;
 if (0 <= hour && hour < 6)

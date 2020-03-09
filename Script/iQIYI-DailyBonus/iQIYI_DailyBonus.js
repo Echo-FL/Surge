@@ -38,7 +38,7 @@ $httpClient.get('https://tc.vip.iqiyi.com/taskCenter/task/queryUserTask?autoSign
         $notification.post("爱奇艺签到", "", status + "！获得" + AwardName + quantity + ", 已连续签到" + continued + "天 🎉");
       }//sucess
       else {
-        console.log("failure response: \n" + data);
+        //console.log("failure response: \n" + data);
         $notification.post("爱奇艺签到", "", "成功, " + obj.data.signInfo.msg + "⚠️");
       }//sucess but duplicate
     } else {

@@ -7,8 +7,8 @@ Modified by zZPiglet
 
 Surge 4.0+:
 [Script]
-cron "1 0 * * *" script-path=https://raw.githubusercontent.com/sky003-Max/surge-personal/Script/Checkin/WeChatLottery.js
-http-request ^https:\/\/new\.api\.hdcj\.9w9\.com\/api\/sign\/sign requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/sky003-Max/surge-personal/Script/Checkin/WeChatLottery.js,script-update-interval=0
+cron "1 0 * * *" script-path=https://raw.githubusercontent.com/sky003-Max/surge-personal/master/Script/Checkin/WeChatLottery.js
+http-request ^https:\/\/new\.api\.hdcj\.9w9\.com\/api\/sign\/sign requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/sky003-Max/surge-personal/master/Script/Checkin/WeChatLottery.js,script-update-interval=0
 
 
 All app:

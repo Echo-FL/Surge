@@ -1,0 +1,6 @@
+#!name=Checkin
+#!desc=签到集合
+#!system=ios
+[Script]
+# 报时器
+Chronograph.js = type=cron,cronexp=*/30 * * * *,script-path=https://raw.githubusercontent.com/sky003-Max/surge-personal/master/Script/self-js/Chronograph.js,script-update-interval=0

@@ -1,3 +1,6 @@
+#!name=General
+#!desc=General Setting
+#!system=ios
 [General]
 # [高级设置]
 # 日志等级

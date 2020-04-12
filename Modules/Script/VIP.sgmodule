@@ -1,0 +1,14 @@
+#!name= unlock vip
+#!desc=解锁VIP体验
+#!system=ios
+[Script]
+# 彩云天气
+ColorWeather.js = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/sky003-Max/surge-personal/master/Script/other/ColorWeather.js,pattern=^https:\/\/biz\.caiyunapp\.com\/v2\/user\?app_name\=weather,type=http-response
+# wps
+Wps.js = requires-body=1,max-size=-1,script-path=https://raw.githubusercontent.com/sky003-Max/surge-personal/master/Script/other/Wps.js,script-update-interval=0,pattern=^https?:\/\/account\.wps\.cn\/api\/users,type=http-response
+# bear
+// bear.js = requires-body=1,max-size=0,script-path=bear.js,pattern=^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt,type=http-response
+# keep
+Keep.js = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Keep.js,script-update-interval=0,pattern=https:\/\/api\.gotokeep\.com\/(.+\/subject|.+\/dynamic),type=http-response
+[MITM]
+hostname= %APPEND% account.wps.cn,biz.caiyunapp.com,buy.itunes.apple.com,api.gotokeep.com

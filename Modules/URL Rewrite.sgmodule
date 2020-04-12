@@ -1,0 +1,15 @@
+#!name=URL Rewrite
+#!desc=Remove ads and 302
+#!system=ios
+
+
+[URL Rewrite]
+# > 微医
+https?://app.wy.guahao.com/json/white/dayquestion/getpopad - reject
+https?://kano.guahao.cn/.+\?resize=\d{3}-\d{4} - reject
+# 维基百科排版
+^https://zh.(m.)?wikipedia.org/zh(-\w*)?(?=/) http://www.wikiwand.com/zh$2 302
+^https://(\w*).(m.)?wikipedia.org/wiki http://www.wikiwand.com/$1 302
+# 狂野飙车9
+^https?:\/\/pangolin.snssdk.com\/api\/ad/union - reject
+

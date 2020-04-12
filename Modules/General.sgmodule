@@ -1,49 +1,33 @@
 [General]
 # [高级设置]
-
 # 日志等级
 loglevel = notify
-
 # 延迟测试（以下为默认值）
 # > Internet 测试 URL
-
 internet-test-url = http://www.gstatic.com/generate_204
-
 # > 代理测速 URL
-
 proxy-test-url = http://www.gstatic.com/generate_204
-
 # > 测速超时（秒）
 # test-timeout = 5
-
 # IPv6 支持
 ipv6 = false
-
 # Wi-Fi 访问
 # > 允许 Wi-Fi 访问（默认不启用）
 # allow-wifi-access = false
-
 # > HTTP 代理服务端口（默认为"6152"）
 # wifi-access-http-port = 6152
-
 # > SOCKS5 代理服务端口（默认为"6153"）
 # wifi-access-socks5-port = 6153
-
 # 外部控制器（默认不启用，以下为样例）
 # external-controller-access = sky003-Max@127.0.0.1:6170
-
 # 兼容性
 # > 兼容模式（默认为"禁用"）
 # compatibility-mode = 0
-
 # > 跳过代理
-
 skip-proxy = 192.168.0.0/16, 193.168.0.0/24, 10.0.0.0/8, 172.16.0.0/12, 100.64.0.0/10, 17.0.0.0/8, 127.0.0.1, localhost, *.local
-
 # 实验性功能
 # > 启动 Network.framework（默认不启用）
 # network-framework = false
-
 # 杂项（请先阅读手册，除非你明确知道选项意义，否则不要修改任何设置）
 # > Show Reject Error Page
 show-error-page-for-reject = true
@@ -57,7 +41,5 @@ force-http-engine-hosts = 123.59.31.1,119.18.193.135,122.14.246.33,175.102.178.5
 # tun-excluded-routes = 
 # > VIF Included Routes
 # tun-included-routes = 
-
 # [DNS] => DNS 服务器
 dns-server = 119.29.29.29,223.5.5.5,system
-

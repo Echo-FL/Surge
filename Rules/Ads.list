@@ -2,7 +2,7 @@
 
 # > 狂野飙车9 游戏结束后广告
 URL-REGEX,^https:\/\/sf1-ttcdn-tos\.pstatp\.com\/obj\/ttfe\/adfe\/union_endcard\/logo\/logo\.png$
-URL-REGEX,^https:\/\/s3\.pstatp\.com\/bytecom\/resource\/track_log\/src\/toutiao-track-log\.js\?ad_id=1661029765055531$
+URL-REGEX,^https:\/\/s3\.pstatp\.com\/bytecom\/resource\/track_log\/src\/toutiao-track-log\.js\?ad_id=\d+$
 # > 阿里
 URL-REGEX,"^https?+:\/\/guide-acs\.m\.taobao\.com\/gw\/mtop\.tmall\.wireless"
 # >> 高德地图

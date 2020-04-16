@@ -1,7 +1,4 @@
 // host   buy.itunes.apple.com
-/*
-http-response ^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/sky003-Max/surge-personal/master/Script/other/bear.js
-*/
 
 var obj = JSON.parse($response.body);
 var bundle_id = obj.receipt["bundle_id"];

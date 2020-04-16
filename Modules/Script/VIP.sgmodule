@@ -8,7 +8,9 @@ ColorWeather.js = requires-body=1,max-size=0,script-path=https://raw.githubuserc
 Wps.js = requires-body=1,max-size=-1,script-path=https://raw.githubusercontent.com/sky003-Max/surge-personal/master/Script/Unlock/Wps.js,script-update-interval=0,pattern=^https?:\/\/account\.wps\.cn\/api\/users,type=http-response
 # bear
 // bear.js = requires-body=1,max-size=0,script-path=bear.js,pattern=^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt,type=http-response
+#Working copy   https://workingcopy.app/education/
+WorkingCopy.js = type=http-response,pattern=^https:\/\/education\.github\.com\/api\/user$,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/sky003-Max/surge-personal/master/Script/Unlock/WorkingCopy.js,script-update-interval=0
 # keep
 Keep.js = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/sky003-Max/Script/master/Surge/JS/Keep.js,script-update-interval=0,pattern=https:\/\/api\.gotokeep\.com\/(.+\/subject|.+\/dynamic),type=http-response
 [MITM]
-hostname= %APPEND% account.wps.cn,biz.caiyunapp.com,buy.itunes.apple.com,api.gotokeep.com
+hostname= %APPEND% account.wps.cn,biz.caiyunapp.com,buy.itunes.apple.com,api.gotokeep.com,education.github.com

@@ -101,7 +101,6 @@ https?://kano.guahao.cn/.+\?resize=\d{3}-\d{4} - reject
 # I
 # J
 # > 京东
-^https?:\/\/api\.m\.jd.com\/client\.action\?functionId=(start|queryMaterialAdverts) - reject
 ^https?:\/\/(bdsp-x|dsp-x)\.jd\.com\/adx\/ - reject
 ^https?:\/\/ms\.jr\.jd\.com\/gw\/generic\/base\/na\/m\/adInfo - reject
 ^https?:\/\/ms\.jr\.jd\.com\/gw\/generic\/aladdin\/na\/m\/getLoadingPicture - reject

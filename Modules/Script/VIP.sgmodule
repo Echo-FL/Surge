@@ -2,8 +2,6 @@
 #!desc=解锁VIP体验
 #!system=ios
 [Script]
-# 彩云天气
-ColorWeather.js = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/sky003-Max/surge-personal/master/Script/Unlock/ColorWeather.js,pattern=^https:\/\/biz\.caiyunapp\.com\/v2\/user\?app_name\=weather,type=http-response
 #Xmind
 Xmind = type=http-response,pattern=https:\/\/www\.xmind\.cn\/\_res\/devices,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/sky003-Max/surge-personal/master/Script/Unlock/Xmind.js,script-update-interval=0
 # wps

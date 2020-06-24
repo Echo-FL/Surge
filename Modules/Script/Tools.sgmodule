@@ -14,7 +14,6 @@ tb_price.js = requires-body=1,script-path=https://raw.githubusercontent.com/sky0
 tb_price.js = requires-body=1,script-path=https://raw.githubusercontent.com/sky003-Max/surge/master/tb_price_lite.js,pattern=^https?://trade-acs\.m\.taobao\.com/gw/mtop\.taobao\.detail\.getdetail,type=http-response
 # 京东比价
 jd_price.js = requires-body=1,script-path=https://raw.githubusercontent.com/sky003-Max/surge/master/jd_price.js,pattern=^https?://api\.m\.jd\.com/client\.action\?functionId=(wareBusiness|serverConfig),type=http-response
-# 报时器
-Chronograph.js = type=cron,cronexp="*/30 7-23 * * *",script-path=https://raw.githubusercontent.com/sky003-Max/surge-personal/master/Script/self-js/Chronograph.js,script-update-interval=0
+
 [MITM]
 hostname= %APPEND% mp.weixin.qq.com,trade-acs.m.taobao.com,ios.prod.ftl.netflix.com,*.googlevideo.com,api.m.jd.com

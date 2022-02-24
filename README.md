@@ -2,9 +2,10 @@
 
 ##   Special thanks：
 * [@DivineEngine/Profiles](https://github.com/DivineEngine/Profiles) 
-* [@lhie1](https://github.com/lhie1)
+* [lhie1 / Rules](https://github.com/lhie1/Rules)
+- [Choler / Surge](https://github.com/Choler/Surge)
+- [yichahucha / surge](https://github.com/yichahucha/surge)
 * [@HanklOus](https://github.com/HanklOus)
-* [@yichahucha](https://github.com/yichahucha)
 * [@NobyDa](https://github.com/NobyDa)
 * [@chavyleung](https://github.com/chavyleung)
 

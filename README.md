@@ -2,12 +2,12 @@
 
 ##   Special thanks：
 * [@DivineEngine/Profiles](https://github.com/DivineEngine/Profiles) 
-* [lhie1 / Rules](https://github.com/lhie1/Rules)
-- [Choler / Surge](https://github.com/Choler/Surge)
-- [yichahucha / surge](https://github.com/yichahucha/surge)
-* [@HanklOus](https://github.com/HanklOus)
-* [@NobyDa](https://github.com/NobyDa)
-* [@chavyleung](https://github.com/chavyleung)
+* [lhie1/Rules](https://github.com/lhie1/Rules)
+* [Choler/Surge](https://github.com/Choler/Surge)
+* [yichahucha/surge](https://github.com/yichahucha/surge)
+* [@yjqiang/surge_scripts](https://github.com/yjqiang/surge_scripts)
+* [@NobyDa/Script](https://github.com/NobyDa/Script)
+* [@chavyleung/scripts](https://github.com/chavyleung/scripts)
 
 ## 许可
 

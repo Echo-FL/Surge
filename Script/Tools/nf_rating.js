@@ -1,6 +1,16 @@
 /*
+奈飞评分
 README：https://github.com/yichahucha/surge/tree/master
- */
+
+[Script]
+
+http-request ^https?://ios.prod.ftl.netflix.com/iosui/user/.+path=%5B%22videos%22%2C%\d+%22%2C%22summary%22%5D script-path=
+
+http-response ^https?://ios.prod.ftl.netflix.com/iosui/user/.+path=%5B%22videos%22%2C%\d+%22%2C%22summary%22%5D requires-body=1,script-path=
+
+[MITM]
+hostname = 
+*/
 
 const $tool = new Tool()
 const consoleLog = false;

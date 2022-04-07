@@ -1,4 +1,5 @@
 /*
+解锁dayone会员
 [Script]
 
 http-response ^https:\/\/dayone\.(me|app)\/api\/(users|v2\/users\/(account-status|receipt))$,requires-body=1,max-size=0,script-path=,script-update-interval=0

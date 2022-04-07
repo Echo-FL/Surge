@@ -1,4 +1,4 @@
-/*
+/* 可以下载更新国区没有的app
 [General]
 skip-proxy = %APPEND%iosapps.itunes.apple.com
 

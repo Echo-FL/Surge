@@ -2,7 +2,7 @@
 解锁dayone会员
 [Script]
 
-http-response ^https:\/\/dayone\.(me|app)\/api\/(users|v2\/users\/(account-status|receipt))$,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Echo-FL/Surge/master/Script/Tools/dayone.js,script-update-interval=0
+dayone = type=http-response pattern=^https:\/\/dayone\.(me|app)\/api\/(users|v2\/users\/(account-status|receipt))$,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Echo-FL/Surge/master/Script/Tools/dayone.js,script-update-interval=0
 
 [MITM]
 hostname = dayone.*

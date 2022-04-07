@@ -5,8 +5,7 @@
 
 xmind = type=http-response,pattern=https?:\/\/.*\.xmind\..*\/_res\/devices,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Echo-FL/Surge/master/Script/Tools/xmind.js
 
-#Dayone
-http-response ^https:\/\/dayone\.(me|app)\/api\/(users|v2\/users\/(account-status|receipt))$,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Echo-FL/Surge/master/Script/Tools/dayone.js,script-update-interval=0
+dayone = type=http-response pattern=^https:\/\/dayone\.(me|app)\/api\/(users|v2\/users\/(account-status|receipt))$,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Echo-FL/Surge/master/Script/Tools/dayone.js,script-update-interval=00
 
 TF_Download = type=http-request,pattern=^https?:\/\/testflight\.apple\.com\/v\d\/accounts\/.+?\/install$,requires-body=1,script-update-interval=-1,max-size=0,script-path=https://raw.githubusercontent.com/Echo-FL/Surge/master/Script/Tools/TF_Download.js
 

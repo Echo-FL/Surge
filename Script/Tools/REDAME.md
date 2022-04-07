@@ -1,8 +1,0 @@
-/*
-[Script]
-
-
-[MITM]
-hostname = 
-
-*/

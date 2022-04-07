@@ -1,3 +1,15 @@
+
+/*
+什么值得买 签到
+[Script]
+
+http-request ^https:\/\/www\.smzdm\.com\/?.? script-path=https://raw.githubusercontent.com/Echo-FL/Surge/master/Script/Checkin/smzdm/smzdm.cookie.js
+cron "10 0 0 * * *" script-path=https://raw.githubusercontent.com/Echo-FL/Surge/master/Script/Checkin/smzdm/smzdm.js
+
+[MITM]
+hostname = *.smzdm.com
+*/
+
 const cookieName = '什么值得买'
 const cookieKey = 'chavy_cookie_smzdm'
 const cookieVal = $persistentStore.read(cookieKey)

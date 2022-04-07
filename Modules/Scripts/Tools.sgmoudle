@@ -3,19 +3,19 @@
 #!system=ios
 [Script]
 
-xmind.js = type=http-response,pattern=https?:\/\/.*\.xmind\..*\/_res\/devices,requires-body=1,max-size=0,script-path=xmind.js
+xmind = type=http-response,pattern=https?:\/\/.*\.xmind\..*\/_res\/devices,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Echo-FL/Surge/master/Script/Tools/xmind.js
 
 #Dayone
-http-response ^https:\/\/dayone\.(me|app)\/api\/(users|v2\/users\/(account-status|receipt))$,requires-body=1,max-size=0,script-path=dayone.js,script-update-interval=0
+http-response ^https:\/\/dayone\.(me|app)\/api\/(users|v2\/users\/(account-status|receipt))$,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Echo-FL/Surge/master/Script/Tools/dayone.js,script-update-interval=0
 
-TF下载修正 = type=http-request,pattern=^https?:\/\/testflight\.apple\.com\/v\d\/accounts\/.+?\/install$,requires-body=1,script-update-interval=-1,max-size=0,script-path=TF_Download.js
-
-#bilibili 精减我的界面
-http-response ^https://app\.bilibili\.com/x/v2/account/mine\?access_key requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Echo-FL/Surge/master/Script/bilibili_mine.js
+TF_Download = type=http-request,pattern=^https?:\/\/testflight\.apple\.com\/v\d\/accounts\/.+?\/install$,requires-body=1,script-update-interval=-1,max-size=0,script-path=https://raw.githubusercontent.com/Echo-FL/Surge/master/Script/Tools/TF_Download.js
 
 #Wechat remove 公众号底部广告
-http-response ^https?:\/\/mp\.weixin\.qq\.com\/mp\/getappmsgad requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/Wechat.js
+http-response ^https?:\/\/mp\.weixin\.qq\.com\/mp\/getappmsgad requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Echo-FL/Surge/master/Script/Tools/wechat.js
 
+网络信息 = type=generic,timeout=3,script-path=https://raw.githubusercontent.com/Echo-FL/Surge/master/Script/Tools/ipcheck.js
+[Panel]
+网络信息 = script-name=网络信息, title="网络信息", content="请刷新", style=info, update-interval=60
 
 [MITM]
-hostname= %APPEND% dayone.*,mp.weixin.qq.com
+hostname= %APPEND% *.xmind.*,dayone.*,testflight.apple.com,,mp.weixin.qq.com

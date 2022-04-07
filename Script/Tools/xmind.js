@@ -3,7 +3,7 @@
 解锁xmind高级功能
 
 [Script]
-xmind = type=http-response,pattern=https?:\/\/.*\.xmind\..*\/_res\/devices,requires-body=1,max-size=0,script-path=xmind.js
+xmind = type=http-response,pattern=https?:\/\/.*\.xmind\..*\/_res\/devices,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Echo-FL/Surge/master/Script/Tools/xmind.js
 [MITM]
 hostname = *.xmind.*
 */

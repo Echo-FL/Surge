@@ -44,7 +44,7 @@ let args = getArgs();
   let total = info.total;
   let expire = args.expire || info.expire;
   let content = [`用量：${bytesToSize(used)} | ${bytesToSize(total)}`];
-
+  console.log(""+content);
   if (resetDayLeft) {
     content.push(`重置：剩余${resetDayLeft}天`);
   }
@@ -58,7 +58,7 @@ let args = getArgs();
   let minutes = now.getMinutes();
   hour = hour > 9 ? hour : "0" + hour;
   minutes = minutes > 9 ? minutes : "0" + minutes;
-
+  console.log("时间："+ formatTime(now)+" "+hour+":"+minutes);
   $done({
     title: `${args.title} | ${hour}:${minutes}`,
     content: content.join("\n"),

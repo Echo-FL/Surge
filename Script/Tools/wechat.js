@@ -8,8 +8,9 @@ http-response ^https?:\/\/mp\.weixin\.qq\.com\/mp\/getappmsgad requires-body=1,m
 hostname = mp.weixin.qq.com
 
 **************************/
-
+console.log($response.body);
 var obj = JSON.parse($response.body);
+console.log(obj);
 obj.advertisement_num = 0;
 obj.advertisement_info = [];
 delete obj.appid;
